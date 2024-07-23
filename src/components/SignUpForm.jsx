@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const SignUpForm= (props)=> {
+const SignUpForm= ({ message, success, token })=> {
   const [userName, setUserName]= useState("");
   const [passWord, setPassWord]= useState("");
   const [error, setError]= useState(null);
